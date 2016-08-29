@@ -1,0 +1,12 @@
+[Unit]
+Description=gogs
+
+[Service]
+Type=simple
+User={{ gogs_user }}
+ExecStart={{ gogs_user_home }}/gogs/scripts/start.sh
+StandardOutput=null
+Restart=on-failure
+
+[Install]
+Alias=gogs.service

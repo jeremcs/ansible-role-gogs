@@ -2,5 +2,5 @@
 
 - name: restart_gogs
   service:
-    name: gogs-server
+    name: gogs
     state: restarted
